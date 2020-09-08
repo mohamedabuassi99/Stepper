@@ -876,7 +876,7 @@ p {
 }
 
 .dietix_links ul li a:hover {
-  color: #15aba1;
+  color: #8facca;
 }
 
 .dietix_links ul li a:focus {
@@ -1102,16 +1102,16 @@ p {
 }
 
 .modal .add-new__outer.green h3 {
-  color: #15aba1;
+  color: #8facca;
 }
 
 .modal .add-new__outer.green input[type=text]:focus {
-  border-color: #15aba1;
+  border-color: #8facca;
 }
 
 .modal .add-new__outer.green input[type=submit] {
-  background: #15aba1;
-  border: 1px solid #15aba1;
+  background: #8facca;
+  border: 1px solid #8facca;
 }
 
 a[href="#addnewitem-modal"] {
@@ -1141,7 +1141,7 @@ a[href="#addnewitem-modal"].orange {
 }
 
 a[href="#addnewitem-modal"].green {
-  background: #15aba1;
+  background: #8facca;
 }
 
 .progress-desktop {
@@ -1162,7 +1162,7 @@ a[href="#addnewitem-modal"].green {
 
 .progress-desktop .progress-bar .percentage {
   font-family: "Roboto", sans-serif;
-  background: #201d34;
+  background: #7e7473;
   color: #FFFFFF;
   width: 72px;
   position: absolute;
@@ -1196,7 +1196,7 @@ a[href="#addnewitem-modal"].green {
 }
 
 .progress-desktop .progress-bar .bar_outer .bar_progress.color_5 {
-  background: #15aba1;
+  background: #8facca;
 }
 
 .progress-desktop .progress-bar .bar_outer .labels {
@@ -1225,11 +1225,11 @@ a[href="#addnewitem-modal"].green {
 }
 
 .progress-desktop .progress-bar .bar_outer .labels .label.done::before {
-  background: #F4795C;
+  background: #c6ddeb;
 }
 
 .progress-desktop .progress-bar .bar_outer .labels .label.current::before {
-  background: #FFA638;
+  background: #3c5468;
 }
 
 .progress-desktop .progress-bar .bar_outer .labels .label.todo::before {
@@ -1308,7 +1308,7 @@ a[href="#addnewitem-modal"].green {
 .slide--gender .slide__section .slide--choices__wrapper .or {
   font-size: 1.9rem;
   margin: 7px;
-  color: #F4795C;
+  color: #9c9084;
 }
 
 .slide--gender .slide__section .slide--choices__wrapper .female button, .slide--gender .slide__section .slide--choices__wrapper .male button {
@@ -1400,7 +1400,7 @@ a[href="#addnewitem-modal"].green {
 }
 
 .slide--gender .slide__section .slide--choices__wrapper .male button span {
-  background-image: linear-gradient(90deg, #38ab15, #15aba1);
+  background-image: linear-gradient(90deg, #38ab15, #8facca);
 }
 
 .slide--gender .slide__section .slide--choices__wrapper .male button span.current {
@@ -1550,7 +1550,7 @@ a[href="#addnewitem-modal"].green {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #15aba1;
+  color: #8facca;
   justify-content: center;
   text-align: center;
   font-size: 1.8rem;
@@ -1561,7 +1561,7 @@ a[href="#addnewitem-modal"].green {
   width: 74px;
   margin-bottom: 7px;
   border-radius: 100px;
-  fill: #15aba1;
+  fill: #8facca;
 }
 
 .slide--description .slide__section form > .row > .col-4 {
@@ -1598,7 +1598,7 @@ a[href="#addnewitem-modal"].green {
   float: right;
   padding: 7px;
   border-radius: 13px;
-  background-image: linear-gradient(90deg, #38ab15, #15aba1);
+  background-image: linear-gradient(90deg, #38ab15, #8facca);
   width: calc(50% - 5px);
   min-height: 100px;
   -webkit-user-select: none;
@@ -1633,7 +1633,7 @@ a[href="#addnewitem-modal"].green {
 
 .slide--description .slide__section form input[type=submit] {
   padding: 15px 62px;
-  background-image: linear-gradient(90deg, #38ab15, #15aba1);
+  background-image: linear-gradient(90deg, #38ab15, #8facca);
   border-radius: 4px;
   transition: transform 0.3s ease;
 }
@@ -1696,7 +1696,7 @@ a[href="#addnewitem-modal"].green {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #15aba1;
+  color: #8facca;
   text-shadow: 0 0 1px #FFFFFF;
   text-align: center;
   font-size: 2rem;
@@ -1706,7 +1706,7 @@ a[href="#addnewitem-modal"].green {
 .slide--personaldata-1 .slide__section h2 svg {
   height: 94px;
   width: 94px;
-  fill: #15aba1;
+  fill: #8facca;
   margin-bottom: 7px;
 }
 
@@ -1785,7 +1785,7 @@ a[href="#addnewitem-modal"].green {
 }
 
 .slide--personaldata-1 .slide__section form label input:focus, .slide--personaldata-1 .slide__section form label select:focus {
-  border-color: #15aba1;
+  border-color: #8facca;
 }
 
 .slide--personaldata-1 .slide__section form label input[type=tel], .slide--personaldata-1 .slide__section form label select[type=tel] {
@@ -1867,9 +1867,9 @@ a[href="#addnewitem-modal"].green {
   background: transparent;
   font-weight: 700;
   border: none;
-  color: #15aba1;
+  color: #39556a;
   font-size: 28px;
-  border-right: 2px solid #15aba1;
+  border-right: 2px solid #39556a;
   margin: 15px auto;
 }
 
@@ -1877,7 +1877,7 @@ a[href="#addnewitem-modal"].green {
   width: 15px;
   height: 15px;
   margin: 5px 7px 0;
-  fill: #15aba1;
+  fill: #8facca;
 }
 
 .slide--personaldata-1 .slide__section form button:hover {
@@ -2133,7 +2133,7 @@ a[href="#addnewitem-modal"].green {
 }
 
 .slide--designurprogram .slide__section h2 p span {
-  color: #15aba1;
+  color: #8facca;
 }
 
 .slide--designurprogram .slide__section h2 svg {
@@ -2169,7 +2169,7 @@ a[href="#addnewitem-modal"].green {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: linear-gradient(90deg, #38ab15, #15aba1);
+  background-image: linear-gradient(90deg, #38ab15, #8facca);
   margin: 5px 7px;
   padding: 15px;
   width: calc(100% - 14px);
@@ -2340,7 +2340,7 @@ a[href="#addnewitem-modal"].green {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #15aba1;
+  color: #8facca;
   justify-content: center;
   text-shadow: 0 0 1px #FFFFFF;
   text-align: center;
@@ -2352,7 +2352,7 @@ a[href="#addnewitem-modal"].green {
   height: 98px;
   width: 98px;
   margin-bottom: 15px;
-  fill: #15aba1;
+  fill: #8facca;
 }
 
 @media only screen and (max-width: 777px) {
@@ -2362,7 +2362,7 @@ a[href="#addnewitem-modal"].green {
 }
 
 .slide--vegetables .slide__section .diet-items--list__form label {
-  color: #15aba1;
+  color: #8facca;
 }
 
 .slide--vegetables .slide__section .diet-items--list__form label svg {
@@ -2374,20 +2374,20 @@ a[href="#addnewitem-modal"].green {
 }
 
 .slide--vegetables .slide__section .diet-items--list__form label:hover svg {
-  fill: #15aba1;
+  fill: #8facca;
 }
 
 .slide--vegetables .slide__section .diet-items--list__form label span.is--checked {
-  color: #15aba1;
+  color: #8facca;
 }
 
 .slide--vegetables .slide__section .diet-items--list__form button {
-  color: #15aba1;
-  border-color: #15aba1;
+  color: #8facca;
+  border-color: #8facca;
 }
 
 .slide--vegetables .slide__section .diet-items--list__form button svg {
-  fill: #15aba1;
+  fill: #8facca;
 }
 
 .slide--vegetables .slide__section .diet-items--list__form button:hover {
@@ -2831,7 +2831,7 @@ a[href="#addnewitem-modal"].green {
 }
 
 .page--apology h3 {
-  color: #15aba1;
+  color: #8facca;
   margin-bottom: 5px;
   font-size: 1.8rem;
 }
@@ -2849,7 +2849,7 @@ a[href="#addnewitem-modal"].green {
 }
 
 .page--apology a:hover {
-  color: #15aba1;
+  color: #8facca;
 }
 
 .page--apology a:focus {
@@ -2970,7 +2970,7 @@ a[href="#addnewitem-modal"].green {
 
 .slide--price-confirmation .slide__section .chosen-options .body, .slide--price-confirmation .slide__section .ibw-wrapper .body {
   padding: 15px;
-  background: #15aba1;
+  background: #8facca;
   border-radius: 0 0 7px 7px;
 }
 
@@ -3219,7 +3219,7 @@ a[href="#addnewitem-modal"].green {
 }
 
 #page-footer .page--copyright__wrapper .copyright-links ul li a:hover {
-  color: #15aba1;
+  color: #8facca;
 }
 
 #page-footer .page--copyright__wrapper .copyright-links ul li a:focus {
@@ -3236,7 +3236,7 @@ a[href="#addnewitem-modal"].green {
 }
 
 .page--about h3 {
-  color: #15aba1;
+  color: #8facca;
   margin-bottom: 5px;
   font-size: 1.8rem;
 }
@@ -3254,7 +3254,7 @@ a[href="#addnewitem-modal"].green {
 }
 
 .page--about a:hover {
-  color: #15aba1;
+  color: #8facca;
 }
 
 .page--about a:focus {
@@ -3303,7 +3303,7 @@ a[href="#addnewitem-modal"].green {
 }
 
 .page--policy h3 {
-  color: #15aba1;
+  color: #8facca;
   margin-bottom: 5px;
   font-size: 1.8rem;
 }
@@ -3321,7 +3321,7 @@ a[href="#addnewitem-modal"].green {
 }
 
 .page--policy a:hover {
-  color: #15aba1;
+  color: #8facca;
 }
 
 .page--policy a:focus {
@@ -3378,7 +3378,7 @@ a[href="#addnewitem-modal"].green {
 }
 
 .page--rules-conditions h3 {
-  color: #15aba1;
+  color: #8facca;
   margin-bottom: 5px;
   font-size: 1.8rem;
 }
@@ -3396,7 +3396,7 @@ a[href="#addnewitem-modal"].green {
 }
 
 .page--rules-conditions a:hover {
-  color: #15aba1;
+  color: #8facca;
 }
 
 .page--rules-conditions a:focus {
@@ -3442,7 +3442,7 @@ a[href="#addnewitem-modal"].green {
 }
 
 .page--contact h3 {
-  color: #15aba1;
+  color: #8facca;
   margin-bottom: 5px;
   font-size: 1.8rem;
 }
@@ -3454,7 +3454,7 @@ a[href="#addnewitem-modal"].green {
 }
 
 .page--contact a:hover {
-  color: #15aba1;
+  color: #8facca;
 }
 
 .page--contact a:focus {
@@ -3515,7 +3515,7 @@ a[href="#addnewitem-modal"].green {
 }
 
 .page--contact .col-8.article form label input:focus, .page--contact .col-8.article form label textarea:focus {
-  border-color: #15aba1;
+  border-color: #8facca;
 }
 
 .page--contact .col-8.article form label input[type=email], .page--contact .col-8.article form label textarea[type=email] {
@@ -3571,7 +3571,7 @@ a[href="#addnewitem-modal"].green {
   background: transparent;
   font-weight: 700;
   border: none;
-  color: #15aba1;
+  color: #8facca;
   font-size: 28px;
   margin: 15px auto;
 }
@@ -3603,7 +3603,7 @@ a[href="#addnewitem-modal"].green {
 
 .page--order-thanku h3 {
   text-align: center;
-  color: #15aba1;
+  color: #8facca;
   margin-bottom: 25px;
   font-size: 1.8rem;
 }
@@ -3621,7 +3621,7 @@ a[href="#addnewitem-modal"].green {
 }
 
 .page--order-thanku a:hover, .page--order-thanku form input[type=submit]:hover {
-  color: #15aba1;
+  color: #8facca;
 }
 
 .page--order-thanku a:focus, .page--order-thanku form input[type=submit]:focus {
@@ -3691,7 +3691,7 @@ a[href="#addnewitem-modal"].green {
 
 .page--payment h3, .page--payment h3 span {
   text-align: center;
-  color: #15aba1;
+  color: #8facca;
   margin-bottom: 25px;
   font-size: 1.8rem;
 }

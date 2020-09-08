@@ -28,7 +28,7 @@
       <div class="container">
         <div class="row">
           <div class="col-8">
-            <h2 class="title">
+            <h2 class="title" >
               @if (file_exists( asset('assets/img/icons/sport-program/personaldata-1.svg') ))
                 {!! file_get_contents(asset('assets/img/icons/sport-program/personaldata-1.svg')) !!}
               @endif
@@ -86,7 +86,7 @@
 
           <div class="row">
             <div class="col-12">
-              <button>التالي
+              <button >التالي
                 @if (file_exists( asset('assets/img/icons/signs/left-arrow.svg') ))
                   {!! file_get_contents(asset('assets/img/icons/signs/left-arrow.svg')) !!}
                 @endif

@@ -36,11 +36,12 @@
                       @if (file_exists( asset('assets/img/icons/male.svg') ))
                         {!! file_get_contents(asset('assets/img/icons/male.svg')) !!}
                       @endif
-                      <strong>نعم</strong>
+                      <strong style="color:#112211;">نعم</strong>
 
-                      <span class="current" style="background:#3244ff;"></span>
-                      <span class="smaller" style="background:#3244ff;"></span>
-                      <span class="bigger" style="background:#3244ff;"></span>
+
+                      <span class="current" style="background:#c6ddeb;"></span>
+                      <span class="smaller" style="background:#c6ddeb;"></span>
+                      <span class="bigger" style="background:#c6ddeb;"></span>
                     </button>
                   </form>
                 </div>
@@ -58,11 +59,11 @@
                       @if (file_exists( asset('assets/img/icons/female.svg') ))
                         {!! file_get_contents(asset('assets/img/icons/female.svg')) !!}
                       @endif
-                      <strong>لا</strong>
+                      <strong style="color:#112211;">لا</strong>
+                      <span class="current" style="background:#eddad4;"></span>
+                      <span class="smaller" style="background:#eddad4;"></span>
+                      <span class="bigger" style="background:#eddad4;"></span>
 
-                      <span class="current" style="background:#ff2244;"></span>
-                      <span class="smaller" style="background:#ff2244;"></span>
-                      <span class="bigger" style="background:#ff2244;"></span>
                     </button>
                   </form>
                 </div>

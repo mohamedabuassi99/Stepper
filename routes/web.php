@@ -15,13 +15,19 @@ use Illuminate\Support\Facades\Route;
 */
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home',function (){
+  return redirect('/');
+})->name('home');
+Route::get('/log-out', 'Auth\LoginController@logout')->name('log-out');
 
-
-Route::get('/', function () {
-    return view('homepage.slides.1');
-    return view('welcome');
-});
+Route::get('/', 'HomeController@index');
 /* Slides */
   Route::get('/{slide_number?}', 'SlideController@diet')->name('slide');
   Route::post('/{slide_number}', 'SlideController@next_slide');
+
+
+Route::post('/student/store','StudentController@store')->name('student.store');
+
+Route::group(['middleware' => 'auth'], function (){
+Route::get('/student/all','StudentController@index')->name('student.index');
+});

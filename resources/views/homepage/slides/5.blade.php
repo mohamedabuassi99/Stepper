@@ -38,9 +38,9 @@
                       @endif
                       <strong>نعم</strong>
 
-                      <span class="current" style="background:#3244ff;"></span>
-                      <span class="smaller" style="background:#3244ff;"></span>
-                      <span class="bigger" style="background:#3244ff;"></span>
+                      <span class="current" style="background:#8899ff;"></span>
+                      <span class="smaller" style="background:#8899ff;"></span>
+                      <span class="bigger" style="background:#8899ff;"></span>
                     </button>
                   </form>
                 </div>
@@ -60,9 +60,9 @@
                       @endif
                       <strong>لا</strong>
 
-                      <span class="current" style="background:#ff2244;"></span>
-                      <span class="smaller" style="background:#ff2244;"></span>
-                      <span class="bigger" style="background:#ff2244;"></span>
+                      <span class="current" style="background:#ff8899;"></span>
+                      <span class="smaller" style="background:#ff8899;"></span>
+                      <span class="bigger" style="background:#ff8899;"></span>
                     </button>
                   </form>
                 </div>

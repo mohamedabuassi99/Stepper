@@ -18,7 +18,7 @@
 
         <div class="row">
           <div class="col-12">
-            <h2>هل لديك خبرة برمجية </h2>
+            <h2 style="color:#7e7472;">هل لديك خبرة برمجية </h2>
           </div>
         </div>
 
@@ -38,9 +38,9 @@
                       @endif
                       <strong>نعم</strong>
 
-                      <span class="current"></span>
-                      <span class="smaller"></span>
-                      <span class="bigger"></span>
+                      <span class="current" style="background:#8facca;"></span>
+                      <span class="smaller" style="background:#8facca;"></span>
+                      <span class="bigger" style="background:#8facca;"></span>
                     </button>
                   </form>
                 </div>
@@ -60,9 +60,9 @@
                       @endif
                       <strong>لا</strong>
 
-                      <span class="current"></span>
-                      <span class="smaller"></span>
-                      <span class="bigger"></span>
+                      <span class="current" style="background:#d06aab;"></span>
+                      <span class="smaller" style="background:#d06aab;"></span>
+                      <span class="bigger" style="background:#d06aab;"></span>
                     </button>
                   </form>
                 </div>

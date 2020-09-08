@@ -18,7 +18,7 @@
 
         <div class="row">
           <div class="col-12">
-            <h2>الجنس</h2>
+            <h2 style="color:#7e7473;">الجنس</h2>
           </div>
         </div>
 
@@ -38,9 +38,9 @@
                       @endif
                       <strong>ذكر</strong>
 
-                      <span class="current" style="background:#008000;"></span>
-                      <span class="smaller" style="background:#008000;"></span>
-                      <span class="bigger" style="background:#008000;"></span>
+                      <span class="current" style="background:#3d5465;"></span>
+                      <span class="smaller" style="background:#3d5465;"></span>
+                      <span class="bigger" style="background:#3d5465;"></span>
                     </button>
                   </form>
                 </div>
@@ -60,9 +60,9 @@
                       @endif
                       <strong>انثى</strong>
 
-                      <span class="current" style="background:#ff4454;"></span>
-                      <span class="smaller" style="background:#ff4454;"></span>
-                      <span class="bigger" style="background:#ff4454;"></span>
+                      <span class="current" style="background:#f48e85;"></span>
+                      <span class="smaller" style="background:#f48e85;"></span>
+                      <span class="bigger" style="background:#f48e85;"></span>
                     </button>
                   </form>
                 </div>

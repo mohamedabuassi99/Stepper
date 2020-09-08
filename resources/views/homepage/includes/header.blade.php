@@ -18,14 +18,14 @@
                 @endif
                 @if(auth()->id())
                 <li>
-                    <a href="">تسجيل خروج</a>
+                    <a href="{{route('log-out')}}">تسجيل خروج</a>
+                </li>
+                <li>
+                    <a href="{{route('student.index')}}">المسجلين</a>
                 </li>
                 @endif
-
               </ul>
             </div>
-
-
         </div>
       </div>
     </div>

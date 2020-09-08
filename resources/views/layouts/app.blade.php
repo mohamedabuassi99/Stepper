@@ -25,7 +25,7 @@
     <link href="{{ asset('assets/admin') }}/css/material-dashboard-rtl.css" rel="stylesheet" />
     <link href="{{ asset('assets/admin') }}/css/overrides.css" rel="stylesheet" />
   </head>
-  <body class="{{ $class ?? '' }}">
+  <body class="{{ $class ?? '' }}" >
     @auth()
         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
             @csrf
