@@ -1,0 +1,844 @@
+@charset "UTF-8";
+
+/* 
+sass/
+|
+|– abstracts/ (or utilities/)
+|   |– _variables.scss    // Sass Variables
+|   |– _functions.scss    // Sass Functions
+|   |– _mixins.scss       // Sass Mixins
+|
+|– base/
+|   |– _reset.scss        // Reset/normalize
+|   |– _typography.scss   // Typography rules
+|
+|– components/ (or modules/)
+|   |– _buttons.scss      // Buttons
+|   |– _carousel.scss     // Carousel
+|   |– _slider.scss       // Slider
+|
+|– layout/
+|   |– _navigation.scss   // Navigation
+|   |– _grid.scss         // Grid system
+|   |– _header.scss       // Header
+|   |– _footer.scss       // Footer
+|   |– _sidebar.scss      // Sidebar
+|   |– _forms.scss        // Forms
+|
+|– pages/
+|   |– _home.scss         // Home specific styles
+|   |– _about.scss        // About specific styles
+|   |– _contact.scss      // Contact specific styles
+|
+|– themes/
+|   |– _theme.scss        // Default theme
+|   |– _admin.scss        // Admin theme
+|
+|– vendors/
+|   |– _bootstrap.scss    // Bootstrap
+|   |– _jquery-ui.scss    // jQuery UI
+|
+`– main.scss              // Main Sass file
+*/
+
+/* Import */
+
+@font-face {
+  font-family: vrw;
+
+  src: url(/assets/fonts/VIPRawyRegular.otf);
+}
+
+@font-face {
+  font-family: vrw;
+
+  src: url(/assets/fonts/VIPRawyBold.otf);
+
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Material Icons";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  src: url(/assets/fonts/material-icons/iconfont/MaterialIcons-Regular.eot);
+
+  /* For IE6-8 */
+
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(/assets/fonts/material-icons/iconfont/MaterialIcons-Regular.woff2) format("woff2"), url(/assets/fonts/material-icons/iconfont/MaterialIcons-Regular.woff) format("woff"), url(/assets/fonts/material-icons/iconfont/MaterialIcons-Regular.ttf) format("truetype");
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  color: #3C4858;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+.material-icons.add {
+  color: #8f4cff;
+}
+
+.material-icons.edit {
+  color: #4caf50;
+}
+
+.material-icons.close {
+  color: #f44336;
+}
+
+.material-icons.send, .material-icons.draft, .material-icons.preview {
+  color: #f6f8f9;
+  margin-left: 10px;
+}
+
+.search-by-email {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.search-by-email .form-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.search-by-email .form-group input {
+  font-size: 17px;
+}
+
+.search-by-email .form-group input[type=text] {
+  width: 100%;
+  max-width: 200px;
+}
+
+.search-by-email .form-group input[type=text]:focus {
+  background-image: linear-gradient(to top, #8f4cff 2px, rgba(156, 39, 176, 0) 2px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px);
+}
+
+.search-by-email .form-group input[type=submit] {
+  padding: 6px 15px;
+  margin: 0;
+  margin-left: 9.5px;
+  background-color: #8f4cff;
+}
+
+.resend {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.resend form {
+  text-align: center;
+}
+
+.resend form input[type=submit] {
+  display: inline-block;
+  background: transparent;
+  border: unset;
+  line-height: 1.69;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.noselect {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.fs-1-2rem {
+  font-size: 1.2rem !important;
+}
+
+.fs-1-7rem {
+  font-size: 1.7rem !important;
+}
+
+.bg-preview {
+  background-color: #f4b4ff;
+}
+
+.card [class*=card-header-]:not(.card-header-icon):not(.card-header-text):not(.card-header-image) {
+  text-align: center;
+}
+
+.card [class*=card-header-]:not(.card-header-icon):not(.card-header-text):not(.card-header-image) h1,
+.card [class*=card-header-]:not(.card-header-icon):not(.card-header-text):not(.card-header-image) h2,
+.card [class*=card-header-]:not(.card-header-icon):not(.card-header-text):not(.card-header-image) h3,
+.card [class*=card-header-]:not(.card-header-icon):not(.card-header-text):not(.card-header-image) h4,
+.card [class*=card-header-]:not(.card-header-icon):not(.card-header-text):not(.card-header-image) h5,
+.card [class*=card-header-]:not(.card-header-icon):not(.card-header-text):not(.card-header-image) p {
+  color: #201d34;
+}
+
+.card [class*=card-header-]:not(.card-header-icon):not(.card-header-text):not(.card-header-image) p {
+  font-size: 1rem;
+}
+
+.card-stats .card-header .card-category:not([class*=text-]) {
+  font-size: 1.5rem;
+}
+
+.card .card-footer .stats a {
+  color: #50aa54;
+  font-size: 1.1rem;
+}
+
+.alert {
+  font-size: 1rem;
+}
+
+.text-primary {
+  color: #8f4cff !important;
+}
+
+.number,
+.fraction {
+  font-family: "Roboto", sans-serif;
+}
+
+.fraction {
+  font-size: 1.2rem;
+}
+
+h3 .number {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.dir-rtl {
+  direction: rtl !important;
+}
+
+.dir-ltr {
+  direction: ltr !important;
+}
+
+.table.table-conversation thead tr th,
+.table.table-conversation tbody tr td {
+  text-align: center;
+}
+
+.table.table-conversation tbody tr td {
+  padding: 48px 8px;
+}
+
+.table.message,
+.table.reply {
+  margin: 10px 0;
+  border: 1px solid #ddd;
+}
+
+.table.message {
+  background: #dee2e6;
+}
+
+.table thead tr th,
+.table tbody tr th,
+.table tbody tr td {
+  font-size: 1.2rem;
+  border: unset;
+  vertical-align: top;
+  min-width: 130px;
+}
+
+.table thead tr .controls {
+  text-align: center;
+}
+
+.table thead tr .controls .btn-action {
+  width: 65%;
+}
+
+.table tbody tr th {
+  width: 130px;
+}
+
+.table thead tr th {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.table tbody tr td.email {
+  font-family: "Roboto", sans-serif;
+}
+
+.table.followup h3 {
+  border-bottom: 1px solid;
+  padding-bottom: 7px;
+}
+
+.message-wrapper.empty {
+  padding: 45px;
+  text-align: center;
+}
+
+.reply-link {
+  font-size: 1.4rem;
+}
+
+textarea.form-control,
+.is-focused textarea.form-control {
+  border: 1px solid #ccc;
+  padding: 7px;
+  font-size: 1.2rem;
+  background-image: none;
+}
+
+.input-group.attachments h4 {
+  width: 100%;
+  font-weight: 700;
+}
+
+.input-group.attachments input[type=file] {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.error strong {
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-top: 7px;
+}
+
+.pagination {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin-top: 25px;
+  justify-content: center;
+}
+
+.pagination .page-item .page-link {
+  color: #8f4cff;
+}
+
+.pagination .page-item.active .page-link {
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #8f4cff;
+  border-color: #8f4cff;
+}
+
+.sidebar .logo .dietix-logo img {
+  height: 65px;
+}
+
+.sidebar .nav li.active > [data-toggle=collapse] {
+  background-color: #ff9800;
+  color: #fff;
+  box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(255, 152, 0, 0.4);
+}
+
+.sidebar .nav li.active > [data-toggle=collapse] i {
+  color: #fff;
+}
+
+.sidebar .nav li .caret {
+  right: -10px;
+}
+
+.sidebar .nav li .nav {
+  margin: 0;
+}
+
+.sidebar .nav li .nav li.active > a.nav-link {
+  background: unset;
+  color: #ff9800;
+  box-shadow: unset;
+  font-weight: 700;
+}
+
+.sidebar .nav li .nav li.active > a.nav-link i {
+  color: #ff9800;
+}
+
+.sidebar .nav li .nav li a.nav-link {
+  margin-top: 0;
+  padding-right: 45px;
+}
+
+input[type=date]::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+}
+
+/* Profile */
+
+.container-fluid .card.order-detail .table tbody tr th {
+  width: 200px;
+}
+
+.container-fluid .card h3 {
+  margin: 20px 0 25px;
+  text-align: center;
+}
+
+.container-fluid .card select {
+  padding: 7.5px 15px;
+  direction: rtl;
+  font-size: 1.2rem;
+  font-family: "vrw", sans-serif;
+  letter-spacing: normal;
+}
+
+.container-fluid .card input {
+  padding: 7.5px 15px;
+  direction: ltr;
+  text-align: right;
+  font-weight: 400;
+}
+
+.container-fluid .card input[type=email], .container-fluid .card input[type=tel] {
+  font-family: "Roboto", sans-serif;
+}
+
+.container-fluid .card input::-webkit-input-placeholder {
+  direction: rtl;
+  font-size: 1.2rem;
+  font-family: "vrw", sans-serif;
+  letter-spacing: normal;
+}
+
+.container-fluid .card input::-moz-placeholder {
+  direction: rtl;
+  font-size: 1.2rem;
+  font-family: "vrw", sans-serif;
+  letter-spacing: normal;
+}
+
+.container-fluid .card input:-ms-input-placeholder {
+  direction: rtl;
+  font-size: 1.2rem;
+  font-family: "vrw", sans-serif;
+  letter-spacing: normal;
+}
+
+.container-fluid .card input::-ms-input-placeholder {
+  direction: rtl;
+  font-size: 1.2rem;
+  font-family: "vrw", sans-serif;
+  letter-spacing: normal;
+}
+
+.container-fluid .card input::placeholder {
+  direction: rtl;
+  font-size: 1.2rem;
+  font-family: "vrw", sans-serif;
+  letter-spacing: normal;
+}
+
+.container-fluid .card input[type=submit].btn-activate, .container-fluid .card input[type=submit].btn-reject {
+  font-size: 1.2rem;
+  padding: 5px;
+  color: #8f4cff;
+  font-weight: 700;
+}
+
+.container-fluid .card input[type=submit].btn-activate:hover, .container-fluid .card input[type=submit].btn-reject:hover {
+  color: #9c27b0;
+}
+
+.container-fluid .card .error {
+  font-size: 1rem;
+}
+
+.container-fluid .card .error span {
+  font-family: "Roboto", sans-serif;
+}
+
+.container-fluid .card [class*=card-header-]:not(.card-header-icon):not(.card-header-text):not(.card-header-image) {
+  width: 100%;
+  border-radius: unset;
+  border-bottom: 1px solid #b4b9bf;
+  box-shadow: unset;
+  padding: 15px;
+}
+
+.container-fluid .card label.col-form-label {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.container-fluid .card a.btn.btn-addnew, .container-fluid .card a.btn-backlist, .container-fluid .card a.btn-action,
+.container-fluid .card input[type=submit].btn.btn-addnew,
+.container-fluid .card input[type=submit].btn-backlist,
+.container-fluid .card input[type=submit].btn-action {
+  font-size: 1.2rem;
+}
+
+.container-fluid .card button[type=submit] {
+  font-size: 1.2rem;
+  min-width: 200px;
+}
+
+.container-fluid .card button[type=button] i.material-icons.close {
+  margin: 0;
+}
+
+.container-fluid .card a.btn-action {
+  font-size: 1rem;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.avatar label[for=avatar],
+.avatar a {
+  position: relative;
+  height: 120px;
+  width: 120px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  border: 1px solid #b4b9bf;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar label[for=avatar] input[type=file],
+.avatar a input[type=file] {
+  position: absolute;
+  height: 0;
+  width: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.avatar label[for=avatar] img,
+.avatar a img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.avatar label[for=avatar] .edit-overlay,
+.avatar a .edit-overlay {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar label[for=avatar]:hover .edit-overlay,
+.avatar a:hover .edit-overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+.avatar a {
+  border: unset;
+  padding: 10px !important;
+  margin: 0 !important;
+}
+
+.avatar input[type=submit] {
+  font-size: 1rem;
+}
+
+.avatar i.material-icons {
+  font-size: 2rem;
+}
+
+/**
+ * Diet Plan
+ **/
+
+h3.circl-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #FFA638;
+  color: #15aba1;
+  margin: 25px auto !important;
+  width: 50px;
+  height: 50px;
+}
+
+.meal_column-outer i.material-icons,
+.meal_component-outer i.material-icons,
+.sport_session-outer i.material-icons {
+  font-size: 1rem;
+}
+
+.meal_column-outer h4,
+.meal_component-outer h4,
+.sport_session-outer h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.copyright-links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+}
+
+.copyright-links ul li {
+  margin: 0 5px;
+}
+
+.copyright-links ul li.vertline {
+  width: 1px;
+  background: #333447;
+  height: 18px;
+}
+
+.copyright-links ul li a {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .copyright-links ul li a {
+    font-size: 1rem;
+  }
+}
+
+.copyright-links ul li a:hover {
+  color: #15aba1;
+}
+
+.copyright-links ul li a:focus {
+  outline: none;
+  color: #F4795C;
+}
+
+.copyright {
+  font-size: 1.2rem !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .copyright,
+.copyright-nav {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .copyright {
+    font-size: 1rem !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .main-panel > .content {
+    padding: 10px 0;
+  }
+
+  .container-fluid {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
+/* Svg Gallery */
+
+.sport-svg-gallery {
+  text-align: center;
+  padding: 0;
+}
+
+.sport-svg-gallery input[type=number] {
+  padding: 7px 0;
+}
+
+.sport-svg-gallery .sport-svg-item {
+  outline: 1px solid #e2e2e2;
+}
+
+.sport-svg-gallery .sport-svg-item .svg-a,
+.sport-svg-gallery .sport-svg-item .svg-b {
+  display: inline-block;
+  width: 100%;
+  max-width: 200px;
+}
+
+.sport-svg-gallery .sport-svg-item table {
+  width: 100%;
+}
+
+.sport-svg-gallery .sport-svg-item table th {
+  background: #f4b4ff;
+}
+
+.sport-svg-gallery .sport-svg-item table td,
+.sport-svg-gallery .sport-svg-item table th {
+  padding: 5px 0;
+  text-align: center;
+  outline: 1px solid #e2e2e2;
+}
+
+/* Preview Tables */
+
+.sport-preview .guide-table {
+  font-size: 1.2rem;
+}
+
+.sport-preview .guide-table th,
+.sport-preview .guide-table td {
+  border: 1px solid black;
+}
+
+.sport-preview .guide-table .plus {
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+.sport-preview .workout-title {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.7rem;
+  background: #f4b4ff;
+  outline: 1px solid #e2e2e2;
+}
+
+.sport-preview .outer {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.sport-preview .sport-session-notice {
+  padding: 25px;
+  font-size: 1.2rem;
+  color: #4caf50;
+}
+
+.sport-preview .workout-exercises {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* Settings */
+
+.settings h4.h3 {
+  color: #231F20;
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+
+.discount-form label.radio-label {
+  font-size: 1.2rem;
+}
+
+.discount-form label input[type=radio] {
+  margin: 0 7px;
+}
+
+.prices-form h5.h4 {
+  font-size: 1.3rem;
+  font-weight: 700 !important;
+}
+
+.manage-meal-components .active-type-content {
+  border-radius: 0.2rem;
+  background: #eeeeee;
+}
+
+.manage-meal-components .active-type-content ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 45px;
+}
+
+.manage-meal-components .active-type-content ul li a {
+  color: #15aba1;
+  font-size: 1.5rem;
+}
+
+.manage-meal-components .active-type-search form {
+  position: relative;
+  padding-right: 14px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.manage-meal-components .active-type-search form input[type=text] {
+  border-radius: 0.2rem;
+  border: 1px solid #15aba1;
+  padding: 7px 15px;
+  font-size: 1.2rem;
+  width: calc(70% - 14px);
+}
+
+.manage-meal-components .active-type-search form i {
+  position: absolute;
+  font-size: 2.3rem;
+  left: 15px;
+  top: 8px;
+}
+
+.manage-meal-components .active-type-search form .btn-search {
+  width: 30%;
+  float: right;
+  font-size: 1.2rem;
+  text-align: center;
+  background: #15aba1;
+  font-weight: 700;
+}
+
+.manage-meal-components .active-type-components i.material-icons.add {
+  font-size: 1.7rem;
+  border-radius: 100px;
+  border: 1px solid;
+}
+
+.jquery-modal.blocker {
+  z-index: 1030;
+}
+
+.jquery-modal.blocker .modal {
+  margin: 0 auto;
+  top: calc(50% - 150px);
+  height: 300px;
+}
+
+.jquery-modal.blocker .modal a.close-modal {
+  top: 5px;
+  right: 5px;
+}
